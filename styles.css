@@ -1,3 +1,4 @@
+/* Option #1 - Pull it in from the url */
 ul {
     list-style: none;
     padding-left: 0;
@@ -14,4 +15,30 @@ ul li {
     padding-top: 3px; /* Adjust this to align the bullet to the top line if multiline */
     padding-bottom: 3px; /* Same as padding-top, gives space at the bottom */
     background-position-y: 10.5px
+  }
+
+
+  
+  /* Option #2 - Just use the built in styling */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: inline-block;
+    width: 8px;
+    height: 4px;
+    margin-right: 0.5em;
+    background-color: #72B01D;
   }
