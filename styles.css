@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+ul li {
+    background: url('https://monarchrestmattress.com/wp-content/uploads/2023/06/cropped-monarch-rest-logo-mark-full-color-rgb-300ppi-sq-1.png') no-repeat left top;
+    padding-left: 23px; /* Adjust if necessary */
+    background-size: 12px;
+    min-height: 25px; /* Adjust to the height of your bullet image or as needed */
+    display: flex;
+    align-items: center; /* Vertically centers the bullet with the text */
+    padding-top: 3px; /* Adjust this to align the bullet to the top line if multiline */
+    padding-bottom: 3px; /* Same as padding-top, gives space at the bottom */
+    background-position-y: 10.5px
+  }
